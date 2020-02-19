@@ -1,0 +1,11 @@
+
+body {
+    background-color: rgb(73, 128, 179);
+}
+.wholebody {
+    text-align: center;
+    margin-top: 4vh
+}
+h1 {
+    display: inline-block
+}
