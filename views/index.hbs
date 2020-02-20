@@ -1,11 +1,53 @@
+
+<h1>Current weather data for {{locationName}} {{countryCodeName}}</h1>
+
+{{!-- Post - once this form has been filled in , post where it needs to go --}}
+{{!-- If we click submit, it is going to send the info to '/; and this means it is going to send the info index.hbs   it depends what name you will have in ./, it can be ./fiveDayWeater, it is sending there--}}
+{{!-- This is form for the city name and the country name and it is all a "formBox" --}}
+{{!-- Send a POST request…    …to the / route                                                              --}}
+<form action="/" method="POST">
+<label for="location">Location: </label>
+<input type="text" name="location">
+<br>
+{{!-- comment these out, this is for one sending box, but i created two, so i dont need them --}}
+{{!-- <input type="submit" value="send"> --}}
+<br>
+
+<label for="countryCode">Country:</label>
+<input type="text" name="countryCode">
+<br>
+<input type="submit" value="Send">
+</form>
+
+
+ {{!-- if there is an error, display that message --}}
+ {{#if err}}
+ <h3>{{err}}</h3>
+ {{else}}
+
+<ul>
+    {{!-- For each item in data (object) --}}
+    {{!-- #each - for each value inside of data we are going to display it in the below set up --}}
+    {{#each data}}
+    {{!-- Create an <li> with the key and value as text --}}
+    <li>{{@key}} : {{this}}</li>
+    {{/each}}
+</ul>
+<img src="{{iconUrl}}" alt="">
+{{/if}}
+
+
+
+
+{{!-- This was before body-parser 
 <div class="wholebody">
-<h1>Current weather data for  <h1> {{locationName}}</h1></h1>
+<h1>Current weather data for  <h1> {{locationName}}</h1></h1> --}}
 
 {{!-- Data taht we get from the API will show up here --}}
-<p>{{data}}</p>
+{{!-- <p>{{data}}</p>
 <p>Country: {{countryCode}}</p>
 <p>The temperature is: {{temp}}C</p>
 <p>Temperature feels like: {{feelsLike}}</p>
 <p>Description of the weather: {{description}}</p>
 
-</div>
+</div> --}}

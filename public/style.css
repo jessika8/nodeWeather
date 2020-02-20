@@ -1,11 +1,21 @@
+/* public forlder - css */
 
 body {
     background-color: rgb(73, 128, 179);
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(5, 31, 78);
+   
+
 }
 .wholebody {
-    text-align: center;
-    margin-top: 4vh
+    display: inline-block;
+    margin-top: 4vh;
+
 }
-h1 {
+/* h1 {
     display: inline-block
+} */
+ul {
+    list-style: none;
 }

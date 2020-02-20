@@ -4,5 +4,6 @@ npm i express
 npm io express-handlebars
 npm i path
 npm i node-fetch (use this instead of request)
+npm i body-parser
 
 npm i -g nodemon (inthe terminal use nodemon)
