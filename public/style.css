@@ -1,21 +1,86 @@
 /* public forlder - css */
+html{
+    height: 100%;
 
+}
 body {
     background-color: rgb(73, 128, 179);
-    text-align: center;
-    border-style: solid;
-    border-color: rgb(5, 31, 78);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    /* margin-top: 15vh; */
    
 
 }
-.wholebody {
-    display: inline-block;
-    margin-top: 4vh;
-
+.indexBody {
+        text-align: center;
+    padding-top: 4vh;
+    height: 48vh;
+    width: 40%;
+    border-style: solid;
+    border-color: rgb(5, 31, 78);
+    background-color: rgb(121, 182, 223);
 }
-/* h1 {
-    display: inline-block
-} */
+h1 {
+    margin-bottom: 3vh;
+}
+
 ul {
     list-style: none;
 }
+li {
+    margin-top: 0.3vh;
+}
+
+.button {
+    width: 16vw;
+   height: 4vh;
+    background-color: rgb(177, 214, 248);
+    border-style: solid;
+    border-color: rgb(5, 31, 78);
+    margin-top: 0.5vh;
+    margin-bottom: 2vh;
+}
+input {
+    width: 9vw;
+    height: 3vh;
+    background-color: rgb(177, 214, 248);
+    border-style: solid;
+    border-color: rgb(5, 31, 78);
+    border-width: 1px;
+    margin-top: 0.1vh;
+}
+img {
+    margin-top: -2.5vh;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        
+        text-align: center;
+        width: 100vw;
+    height: 100%;
+    }
+    .indexBody {
+       
+        height: 80vh;
+        width: 85%;
+    }
+    .button {
+        width: 45vw;
+        height: 6vh;
+        margin-top: 0.5vh;
+    }
+    input {
+        width: 25vw;
+        border-width: 1px;
+        margin-top: 0.1vh;
+        height: 5vh;
+    }
+    img {
+        margin-top: 1.5vh;
+    }
+  }

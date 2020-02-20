@@ -1,4 +1,4 @@
-
+<div class="indexBody">
 <h1>Current weather data for {{locationName}} {{countryCodeName}}</h1>
 
 {{!-- Post - once this form has been filled in , post where it needs to go --}}
@@ -6,17 +6,18 @@
 {{!-- This is form for the city name and the country name and it is all a "formBox" --}}
 {{!-- Send a POST request…    …to the / route                                                              --}}
 <form action="/" method="POST">
-<label for="location">Location: </label>
+<div class="inputform">
+<label class="loc" for="location">Location: </label>
 <input type="text" name="location">
 <br>
 {{!-- comment these out, this is for one sending box, but i created two, so i dont need them --}}
 {{!-- <input type="submit" value="send"> --}}
-<br>
 
-<label for="countryCode">Country:</label>
+<label class="coun" for="countryCode">Country :</label>
 <input type="text" name="countryCode">
-<br>
-<input type="submit" value="Send">
+</div>
+{{!-- <br> --}}
+<input type="submit" value="Send" class="button">
 </form>
 
 
@@ -35,7 +36,7 @@
 </ul>
 <img src="{{iconUrl}}" alt="">
 {{/if}}
-
+</div>
 
 
 
