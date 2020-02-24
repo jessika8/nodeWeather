@@ -64,7 +64,7 @@ app.post('/', async (req, res) => {
         res.render('index', { data: { Temperature: temp, Feels: feelsLike, Wind: windSpeed, Description: description, }, iconUrl, locationName, countryCodeName });
 
     } else {
-        res.render('index', { err: "The location you entered dosen't exist!" })
+        res.render('index', { err: "The location you have entered does not exist!" })
     }
 
 })
