@@ -85,6 +85,6 @@ app.post('/', async (req, res) => {
 //     res.render('index', {description, locationName, countryCode, temp, feelsLike});
 // })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('server listening on port 3000')
 })
